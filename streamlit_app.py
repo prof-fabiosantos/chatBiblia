@@ -5,7 +5,7 @@ from gradio_client import Client
 image = Image.open('bíblia1.jpg')
 
 # Título da aplicação Streamlit
-st.title("Chatbot da Bíblia Sagrada")
+st.title("Pergunte para a Bíblia Sagrada")
 st.image('bíblia1.jpg', caption='Biblia Sagrada')
 
 # Criar um campo de entrada de texto para a pergunta
@@ -20,7 +20,7 @@ if st.button("Enviar"):
     result = client.predict(question, api_name="/predict")
     
     # Exibir a resposta
-    st.write("Resposta do Chatbot:")
+    st.write("Resposta da Bíblia:")
     st.write(result)
 
 # Nota explicativa
